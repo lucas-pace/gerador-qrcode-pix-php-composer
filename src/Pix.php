@@ -153,4 +153,9 @@ class Pix
     {
         return (new QRCode)->render($this->montaPix());
     }
+
+    public function setDescricao($descricao)
+    {
+        $this->payload[26][02] = $descricao;
+    }
 }
