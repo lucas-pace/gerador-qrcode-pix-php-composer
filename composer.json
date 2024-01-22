@@ -4,7 +4,7 @@
   "type": "library",
   "autoload": {
     "psr-4": {
-      "LucasPace\\QRCode\\Pix\\": "src/"
+      "LucasPace\\QRCode\\": "src/"
     }
   },
   "require": {
