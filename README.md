@@ -1,6 +1,6 @@
 # Gerador de QRCode Pix
 
-Gerador criado para facilitar a criação de QRCode do [PIX do Banco Central](https://www.bcb.gov.br/estabilidadefinanceira/pix) para pagamentos. Diferentemente de outras soluções já criadas para o mesmo propósito, este pacote abstrai as complexidades de montar a estrutura de um Pix e utiliza pacotes mais modernos.
+Gerador criado para facilitar a criação de QRCode do [PIX do Banco Central](https://www.bcb.gov.br/estabilidadefinanceira/pix) para pagamentos. Diferentemente de outras soluções já criadas para o mesmo propósito, este pacote abstrai as complexidades de montar a estrutura de um Pix exigido pelo BACEN e utiliza pacotes mais modernos.
 
 [![PHP Version Support][php-badge]][php]
 [![Packagist version][packagist-badge]][packagist]
