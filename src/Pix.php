@@ -63,7 +63,7 @@ class Pix
 
     private function removeCharEspeciais($txt)
     {
-        return preg_replace('/\W /', '', $this->removeAcentos($txt));
+        return preg_replace('/[^a-zA-Z0-9\s]/u', '', $this->removeAcentos($txt));
     }
 
     private function removeAcentos($texto)
