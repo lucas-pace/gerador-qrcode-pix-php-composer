@@ -63,7 +63,7 @@ class Pix
 
     private function removeCharEspeciais($txt)
     {
-        return preg_replace('/\W /', '', $this->removeAcentos($txt));
+        return preg_replace('/[^a-zA-Z0-9@!#$%&\'*+\/=?^_`{|}~.-\/]/', '', $this->removeAcentos($txt));
     }
 
     private function removeAcentos($texto)
@@ -89,7 +89,7 @@ class Pix
     private function cpm($tx)
     {
         if (strlen($tx) > 99) {
-            die("Tamanho máximo deve ser 99, inválido: $tx possui " . strlen($tx) . " caracteres.");
+            throw new \InvalidArgumentException("Tamanho máximo deve ser 99, inválido: $tx possui " . strlen($tx) . " caracteres.");
         }
 
         return $this->c2(strlen($tx));
