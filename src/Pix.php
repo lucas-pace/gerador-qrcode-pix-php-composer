@@ -89,7 +89,7 @@ class Pix
     private function cpm($tx)
     {
         if (strlen($tx) > 99) {
-            die("Tamanho máximo deve ser 99, inválido: $tx possui " . strlen($tx) . " caracteres.");
+            throw new \InvalidArgumentException("Tamanho máximo deve ser 99, inválido: $tx possui " . strlen($tx) . " caracteres.");
         }
 
         return $this->c2(strlen($tx));
